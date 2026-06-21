@@ -371,8 +371,10 @@ h3 {
   color: var(--muted);
 }
 
+/* Image card: fixed height, fallback background nếu ảnh thiếu */
 .image-card {
   min-height: 248px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), var(--surface-strong));
 }
 
 .image-card img {
@@ -380,6 +382,12 @@ h3 {
   height: 100%;
   object-fit: cover;
   filter: saturate(0.82) contrast(1.04);
+}
+
+/* Nếu ảnh lỗi, ẩn thẻ img để không làm vỡ layout */
+.image-card img[src=""],
+.image-card img:not([src]) {
+  display: none;
 }
 
 .signal-card {
@@ -716,18 +724,27 @@ h3 {
   font-weight: 800;
 }
 
-/* Reveal animation is fail-safe: content is never hidden before JavaScript runs. */
+/* =============================================
+   REVEAL ANIMATION — FIX
+   Content luôn hiển thị khi không có JS.
+   Khi có JS, fade + slide lên nhẹ.
+   Khi is-visible được thêm vào, hiện đầy đủ.
+   ============================================= */
+
+/* Mặc định: luôn hiển thị (fallback an toàn) */
 .reveal {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Khi JS đã chạy: ẩn nhẹ trước khi reveal */
 .js-enabled .reveal {
-  opacity: 1;
-  transform: translateY(8px);
-  transition: transform 560ms ease, filter 560ms ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 560ms ease, transform 560ms ease;
 }
 
+/* Khi JS thêm is-visible: hiện ra */
 .js-enabled .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
