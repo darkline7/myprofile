@@ -24,4 +24,4 @@ https://github.com/darkline7/myprofile.git
 
 5. Pull or deploy the `main` branch.
 
-The site is static, so `index.html`, `styles.css`, `script.js`, and `assets/` are enough for hosting.
+The site is static, so `index.html`, `style.css`, `script.js`, and `assets/` are enough for hosting.
