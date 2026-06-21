@@ -77,16 +77,27 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.14 }
+    { threshold: 0.05, rootMargin: "0px 0px -5% 0px" }
   );
 
   revealEls.forEach((el) => revealObserver.observe(el));
+
+  // Reduced timeout: 200ms instead of 900ms to prevent blank screens
   window.setTimeout(() => {
     revealEls.forEach((el) => el.classList.add("is-visible"));
-  }, 900);
+  }, 200);
 } else {
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
+
+// Fallback: if URL has a hash anchor, force-reveal all elements after load
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    setTimeout(() => {
+      revealEls.forEach((el) => el.classList.add("is-visible"));
+    }, 100);
+  }
+});
 
 // Active navbar state while scrolling.
 if ("IntersectionObserver" in window) {
