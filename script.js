@@ -32,7 +32,12 @@ nav?.addEventListener("click", (event) => {
 // Dark mode, lưu lựa chọn vào localStorage.
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeIcon = themeToggle?.querySelector("i");
-const savedTheme = localStorage.getItem("portfolio-theme");
+let savedTheme = null;
+try {
+  savedTheme = localStorage.getItem("portfolio-theme");
+} catch {
+  savedTheme = null;
+}
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
@@ -42,26 +47,35 @@ if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
 
 themeToggle?.addEventListener("click", () => {
   const isDark = document.body.classList.toggle("dark");
-  localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+  try {
+    localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+  } catch {
+    // Nếu browser chặn localStorage, dark mode vẫn đổi trong phiên hiện tại.
+  }
   themeIcon?.classList.toggle("fa-sun", isDark);
   themeIcon?.classList.toggle("fa-moon", !isDark);
 });
 
 // Hiệu ứng xuất hiện khi scroll.
 const revealEls = document.querySelectorAll(".reveal");
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
+document.documentElement.classList.add("js-enabled");
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
 
-revealEls.forEach((el) => revealObserver.observe(el));
+  revealEls.forEach((el) => revealObserver.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("is-visible"));
+}
 
 // Contact form demo: mở email client bằng mailto.
 const contactForm = document.querySelector("[data-contact-form]");

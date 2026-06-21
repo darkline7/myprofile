@@ -741,14 +741,19 @@ body.dark .project-links a {
   border-radius: var(--radius);
 }
 
-/* Scroll reveal animation */
+/* Scroll reveal animation. Nội dung mặc định vẫn hiện nếu JS không load trên hosting. */
 .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js-enabled .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 520ms ease, transform 520ms ease;
 }
 
-.reveal.is-visible {
+.js-enabled .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
