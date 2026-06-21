@@ -1,265 +1,236 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Website profile cá nhân hiện đại, sạch và responsive cho developer.">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="Pham Thanh Binh - Web Developer and Blockchain Learner based in Ho Chi Minh City.">
+    <meta name="theme-color" content="#07111f">
 
-    <meta property="og:title" content="[Tên của tôi] | Portfolio">
-    <meta property="og:description" content="[1-2 câu giới thiệu ngắn về bạn]">
+    <meta property="og:title" content="Pham Thanh Binh | Developer Portfolio">
+    <meta property="og:description" content="A modern developer portfolio focused on web projects, blockchain learning, and practical product building.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/hero-workspace.png">
 
-    <title>[Tên của tôi] | Portfolio</title>
+    <title>Pham Thanh Binh | Developer Portfolio</title>
 
-    <!-- Font + icon CDN đơn giản, có thể bỏ nếu muốn tự host toàn bộ. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="preload" href="assets/images/hero-workspace.png" as="image">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <!-- Header / Navigation -->
+    <!-- Site Header -->
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="Về đầu trang">
+      <a class="brand" href="#home" aria-label="Go to home">
         <span class="brand-mark">TB</span>
-        <span>[Tên của tôi]</span>
+        <span class="brand-text">Thanh Binh</span>
       </a>
 
-      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Mở menu" aria-expanded="false">
-        <span></span>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
 
-      <nav class="site-nav" data-nav aria-label="Điều hướng chính">
+      <nav class="site-nav" data-nav aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Education</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Đổi giao diện sáng tối">
-        <i class="fa-solid fa-moon"></i>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light mode">
+        <i class="fa-solid fa-sun"></i>
       </button>
     </header>
 
     <main>
       <!-- Hero Section -->
       <section class="hero section-shell" id="home">
-        <div class="hero-content reveal">
-          <p class="section-kicker">Portfolio Developer</p>
-          <h1>Xin chào, tôi là <span>[Tên của tôi]</span></h1>
-          <p class="hero-role">[Ví dụ: Sinh viên CNTT / Web Developer / Blockchain Developer]</p>
-          <p class="hero-description">
-            [1-2 câu giới thiệu ngắn về bạn, định hướng hiện tại và điều bạn có thể mang lại cho đội nhóm hoặc khách hàng.]
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Ho Chi Minh City • Developer Portfolio</p>
+          <h1>Building clean web experiences while learning the blockchain stack.</h1>
+          <p class="hero-lead">
+            I am Pham Thanh Binh, a young web developer and blockchain learner focused on practical interfaces, reliable code, and projects that can be shipped.
           </p>
-
-          <div class="hero-meta" aria-label="Thông tin nhanh">
-            <span><i class="fa-solid fa-location-dot"></i> [TP.HCM, Việt Nam]</span>
-            <span><i class="fa-solid fa-envelope"></i> [email]</span>
-          </div>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">
-              <i class="fa-solid fa-layer-group"></i>
-              Xem dự án
+              View Projects
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a class="btn btn-secondary" href="#contact">
-              <i class="fa-solid fa-paper-plane"></i>
-              Liên hệ
-            </a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
 
-        <aside class="hero-card reveal" aria-label="Ảnh đại diện và trạng thái">
-          <!-- Thay avatar-placeholder bằng <img src="link-anh-cua-ban.jpg" alt="Ảnh đại diện của [Tên của tôi]"> nếu có ảnh thật. -->
-          <div class="avatar-placeholder" aria-hidden="true">
-            <span>TB</span>
-          </div>
-
-          <div class="profile-chip">
-            <span class="status-dot"></span>
-            Available for opportunities
-          </div>
-
-          <div class="hero-preview">
-            <img src="assets/images/hero-workspace.png" alt="Không gian làm việc lập trình hiện đại">
-          </div>
-
-          <div class="quick-stats" aria-label="Thông số nổi bật">
+        <div class="hero-bento reveal" aria-label="Developer profile snapshot">
+          <article class="bento-card profile-card">
+            <div class="avatar" aria-hidden="true">TB</div>
             <div>
-              <strong>6+</strong>
-              <span>Dự án demo</span>
+              <p class="card-label">Web Developer / Blockchain Learner</p>
+              <h2>Pham Thanh Binh</h2>
+              <p>HUTECH student building a stronger foundation in frontend, backend, and Web3 workflows.</p>
             </div>
-            <div>
-              <strong>10+</strong>
-              <span>Kỹ năng</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>Responsive</span>
-            </div>
-          </div>
-        </aside>
+          </article>
+
+          <article class="bento-card image-card">
+            <img src="assets/images/hero-workspace.png" alt="Modern developer workspace with code and technical dashboard screens">
+          </article>
+
+          <article class="bento-card signal-card">
+            <span class="live-dot"></span>
+            <p>Open to internships, freelance work, and product-minded tech collaborations.</p>
+          </article>
+
+          <article class="bento-card stack-card">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>MetaMask</span>
+          </article>
+        </div>
       </section>
 
       <!-- About Section -->
       <section class="section section-shell" id="about">
         <div class="section-heading reveal">
-          <p class="section-kicker">About</p>
-          <h2>Giới thiệu bản thân</h2>
-          <p>
-            Tôi yêu thích việc xây dựng sản phẩm web rõ ràng, dễ dùng và có khả năng triển khai thực tế trên hosting.
-          </p>
+          <p class="eyebrow">About</p>
+          <h2>A developer profile shaped by building, testing, and learning in public.</h2>
         </div>
 
         <div class="about-grid">
-          <article class="about-card reveal">
-            <h3>Tôi là ai?</h3>
+          <article class="bento-card about-story reveal">
+            <h3>Short Story</h3>
             <p>
-              [Viết 3-5 câu giới thiệu chi tiết hơn: bạn học/làm gì, đang tập trung vào công nghệ nào, kiểu dự án bạn muốn tham gia.]
+              I study Information Technology at HUTECH and spend my time turning small ideas into working web projects. My current path combines classic web development with blockchain fundamentals, so I can understand both user-facing products and the systems behind them.
             </p>
             <p>
-              [Bạn có thể thêm điểm mạnh như tự học tốt, tư duy logic, cẩn thận với giao diện, giao tiếp tốt hoặc khả năng triển khai.]
+              I care about clean structure, readable interfaces, and deployment-ready work. The goal is simple: build projects that are easy to review, easy to maintain, and useful enough to improve.
             </p>
           </article>
 
-          <div class="strength-list reveal">
-            <article>
-              <i class="fa-solid fa-bullseye"></i>
-              <div>
-                <h3>Định hướng</h3>
-                <p>Phát triển thành developer có khả năng xây dựng sản phẩm hoàn chỉnh từ giao diện đến triển khai.</p>
-              </div>
-            </article>
-            <article>
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
-              <div>
-                <h3>Điểm mạnh</h3>
-                <p>Chú ý chi tiết, bố cục sạch, code dễ đọc và ưu tiên trải nghiệm người dùng.</p>
-              </div>
-            </article>
-            <article>
-              <i class="fa-solid fa-rocket"></i>
-              <div>
-                <h3>Mục tiêu</h3>
-                <p>Tạo website chuyên nghiệp giúp nhà tuyển dụng hoặc khách hàng hiểu nhanh năng lực của tôi.</p>
-              </div>
-            </article>
-          </div>
+          <article class="bento-card focus-card reveal">
+            <span class="metric">01</span>
+            <h3>Product Thinking</h3>
+            <p>I design pages around the first question a recruiter or client asks: what can this person build?</p>
+          </article>
+
+          <article class="bento-card focus-card reveal">
+            <span class="metric">02</span>
+            <h3>Learning Rhythm</h3>
+            <p>Frontend fundamentals first, backend flow next, then Web3 concepts through small experiments.</p>
+          </article>
+
+          <article class="bento-card focus-card wide reveal">
+            <span class="metric">03</span>
+            <h3>Working Style</h3>
+            <p>Calm execution, clear naming, responsive UI, and a habit of checking details before calling a project done.</p>
+          </article>
         </div>
       </section>
 
       <!-- Skills Section -->
       <section class="section section-shell" id="skills">
         <div class="section-heading reveal">
-          <p class="section-kicker">Skills</p>
-          <h2>Kỹ năng theo nhóm</h2>
-          <p>Các kỹ năng có thể chỉnh sửa, thêm bớt hoặc đổi mức độ trong file HTML/CSS.</p>
+          <p class="eyebrow">Skills</p>
+          <h2>Core tools I use and the stack I am actively growing into.</h2>
         </div>
 
         <div class="skills-grid">
-          <article class="skill-group reveal">
-            <div class="group-title">
+          <article class="skill-card reveal">
+            <div class="skill-top">
               <i class="fa-solid fa-code"></i>
               <h3>Frontend</h3>
             </div>
-            <div class="skill-tags">
+            <p>Building responsive, structured interfaces with strong visual hierarchy.</p>
+            <div class="tag-list">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
-              <span>React</span>
-              <span>Responsive UI</span>
             </div>
           </article>
 
-          <article class="skill-group reveal">
-            <div class="group-title">
-              <i class="fa-solid fa-server"></i>
-              <h3>Backend / Database</h3>
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-solid fa-database"></i>
+              <h3>Backend</h3>
             </div>
-            <div class="skill-tags">
+            <p>Understanding basic server-side flow, database structure, and CRUD logic.</p>
+            <div class="tag-list">
               <span>PHP</span>
               <span>MySQL</span>
-              <span>REST API</span>
-              <span>Authentication</span>
+              <span>REST Basics</span>
             </div>
           </article>
 
-          <article class="skill-group reveal">
-            <div class="group-title">
-              <i class="fa-solid fa-cubes"></i>
-              <h3>Blockchain</h3>
+          <article class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-solid fa-toolbox"></i>
+              <h3>Tools / Tech</h3>
             </div>
-            <div class="skill-tags">
-              <span>Blockchain</span>
-              <span>Smart Contract</span>
-              <span>MetaMask</span>
-              <span>Web3 Basics</span>
-            </div>
-          </article>
-
-          <article class="skill-group reveal">
-            <div class="group-title">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-              <h3>Tools</h3>
-            </div>
-            <div class="skill-tags">
+            <p>Using practical tools for version control, deployment, and Web3 experiments.</p>
+            <div class="tag-list">
               <span>Git</span>
               <span>GitHub</span>
               <span>cPanel</span>
-              <span>Figma</span>
-              <span>VS Code</span>
+              <span>MetaMask</span>
+            </div>
+          </article>
+
+          <article class="skill-card highlight reveal">
+            <div class="skill-top">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>Learning Next</h3>
+            </div>
+            <p>Deepening my ability to ship richer interfaces and understand smart contract workflows.</p>
+            <div class="tag-list">
+              <span>React</span>
+              <span>Blockchain</span>
+              <span>Smart Contracts</span>
             </div>
           </article>
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section class="section section-shell" id="projects">
+      <section class="section section-shell projects-section" id="projects">
         <div class="section-heading reveal">
-          <p class="section-kicker">Projects</p>
-          <h2>Dự án nổi bật</h2>
-          <p>Thay nội dung, demo link và GitHub link bằng dự án thật của bạn.</p>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Selected work designed to show practical building ability.</h2>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-top">
-              <span>01</span>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <article class="project-card featured reveal">
+            <div class="project-index">01</div>
+            <div>
+              <p class="project-type">Portfolio System</p>
+              <h3>Premium Developer Portfolio</h3>
+              <p>A dark-first personal website with bento layout, responsive sections, active navigation, and polished micro-interactions.</p>
             </div>
-            <h3>Personal Portfolio</h3>
-            <p>Website profile cá nhân responsive, có dark mode, section dự án và form liên hệ.</p>
-            <div class="tech-stack">
+            <div class="tag-list">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
             </div>
             <div class="project-links">
-              <a href="#" aria-label="Xem demo Personal Portfolio">Demo</a>
-              <a href="#" aria-label="Xem GitHub Personal Portfolio">GitHub</a>
+              <a href="#" aria-label="View portfolio demo">Demo</a>
+              <a href="https://github.com/darkline7/myprofile" target="_blank" rel="noreferrer" aria-label="View portfolio GitHub repository">GitHub</a>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-top">
-              <span>02</span>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <h3>Student Management</h3>
-            <p>Ứng dụng quản lý sinh viên với chức năng thêm, sửa, xóa, tìm kiếm và lưu dữ liệu.</p>
-            <div class="tech-stack">
+            <div class="project-index">02</div>
+            <p class="project-type">Management App</p>
+            <h3>Student Management Dashboard</h3>
+            <p>A CRUD-focused project for managing student records, search states, and database-backed information.</p>
+            <div class="tag-list">
               <span>PHP</span>
               <span>MySQL</span>
-              <span>Bootstrap</span>
+              <span>Admin UI</span>
             </div>
             <div class="project-links">
               <a href="#">Demo</a>
@@ -268,13 +239,11 @@
           </article>
 
           <article class="project-card reveal">
-            <div class="project-top">
-              <span>03</span>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <h3>Web3 Wallet Connect</h3>
-            <p>Demo kết nối MetaMask, hiển thị địa chỉ ví và xử lý trạng thái kết nối cơ bản.</p>
-            <div class="tech-stack">
+            <div class="project-index">03</div>
+            <p class="project-type">Web3 Experiment</p>
+            <h3>MetaMask Wallet Connect</h3>
+            <p>A small Web3 interface that connects to MetaMask, reads wallet state, and handles simple UI feedback.</p>
+            <div class="tag-list">
               <span>JavaScript</span>
               <span>MetaMask</span>
               <span>Web3</span>
@@ -286,13 +255,11 @@
           </article>
 
           <article class="project-card reveal">
-            <div class="project-top">
-              <span>04</span>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <h3>Landing Page Service</h3>
-            <p>Landing page giới thiệu dịch vụ, tối ưu bố cục, CTA và trải nghiệm trên điện thoại.</p>
-            <div class="tech-stack">
+            <div class="project-index">04</div>
+            <p class="project-type">Landing Page</p>
+            <h3>Service Landing Page</h3>
+            <p>A conversion-minded landing page structure with clear copy, mobile-first sections, and fast static hosting.</p>
+            <div class="tag-list">
               <span>HTML</span>
               <span>CSS</span>
               <span>SEO</span>
@@ -306,93 +273,82 @@
       </section>
 
       <!-- Education / Experience Section -->
-      <section class="section section-shell" id="experience">
+      <section class="section section-shell" id="education">
         <div class="section-heading reveal">
-          <p class="section-kicker">Education / Experience</p>
-          <h2>Học vấn & kinh nghiệm</h2>
-          <p>Phần timeline giúp nhà tuyển dụng nắm nhanh quá trình học tập và làm việc của bạn.</p>
+          <p class="eyebrow">Education / Experience</p>
+          <h2>A focused learning journey from fundamentals to deployable projects.</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item reveal">
-            <span class="timeline-date">2023 - 2027</span>
-            <h3>[Tên trường đại học/cao đẳng]</h3>
-            <p>[Chuyên ngành: Công nghệ thông tin / Kỹ thuật phần mềm / Hệ thống thông tin]</p>
+            <span>2023 - Present</span>
+            <h3>HUTECH University</h3>
+            <p>Information Technology student building a foundation in programming, web systems, database design, and software thinking.</p>
           </article>
 
           <article class="timeline-item reveal">
-            <span class="timeline-date">2025 - Hiện tại</span>
-            <h3>[Thực tập / Freelance / Dự án cá nhân]</h3>
-            <p>[Mô tả ngắn công việc, công nghệ sử dụng và kết quả đạt được.]</p>
+            <span>2024 - Present</span>
+            <h3>Self-Learning Web Development</h3>
+            <p>Creating small projects to practice layout, JavaScript behavior, database-backed flows, GitHub workflow, and cPanel deployment.</p>
           </article>
 
           <article class="timeline-item reveal">
-            <span class="timeline-date">2024</span>
-            <h3>[Chứng chỉ / Khóa học / Thành tích]</h3>
-            <p>[Thêm chứng chỉ, cuộc thi, đồ án hoặc hoạt động nổi bật nếu có.]</p>
+            <span>Next Step</span>
+            <h3>Internship / Freelance Projects</h3>
+            <p>Looking for real product environments where I can contribute, learn from feedback, and keep improving execution quality.</p>
           </article>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section class="section section-shell contact-section" id="contact">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Contact</p>
-          <h2>Liên hệ với tôi</h2>
-          <p>Nếu bạn có cơ hội thực tập, công việc hoặc dự án phù hợp, hãy gửi thông tin cho tôi.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-info reveal">
-            <a href="mailto:[email]">
-              <i class="fa-solid fa-envelope"></i>
-              <span>[email]</span>
-            </a>
-            <a href="tel:[số điện thoại]">
-              <i class="fa-solid fa-phone"></i>
-              <span>[số điện thoại]</span>
-            </a>
-            <a href="[link]" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i>
-              <span>GitHub</span>
-            </a>
-            <a href="[link]" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-linkedin"></i>
-              <span>LinkedIn / Facebook</span>
-            </a>
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Have an internship, freelance task, or collaboration idea?</h2>
+            <p>
+              Send a short message with the role, project, or idea. I will reply with context, availability, and the next practical step.
+            </p>
+            <div class="social-row" aria-label="Social links">
+              <a href="https://github.com/darkline7" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
 
-          <form class="contact-form reveal" data-contact-form>
+          <form class="contact-form" data-contact-form>
             <label>
-              Tên của bạn
-              <input type="text" name="name" placeholder="Nguyễn Văn A" required>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="email@example.com" required>
+              <input type="email" name="email" placeholder="your@email.com" required>
             </label>
             <label>
-              Nội dung
-              <textarea name="message" rows="5" placeholder="Tôi muốn trao đổi về..." required></textarea>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
             </label>
             <button class="btn btn-primary" type="submit">
+              Send Message
               <i class="fa-solid fa-paper-plane"></i>
-              Gửi tin nhắn
             </button>
-            <p class="form-note" data-form-note>Form demo sẽ mở email trên máy của người gửi.</p>
+            <p class="form-note" data-form-note>This form opens your email app using mailto.</p>
           </form>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <p>© <span data-year></span> [Tên của tôi]. All rights reserved.</p>
-      <div class="footer-socials" aria-label="Liên kết mạng xã hội">
-        <a href="[link]" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href="[link]" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="[link]" aria-label="Facebook" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
-      </div>
+    <footer class="site-footer section-shell">
+      <p>© <span data-year></span> Pham Thanh Binh. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
