@@ -1,356 +1,362 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pham Thanh Binh - Web Developer and Blockchain Learner based in Ho Chi Minh City.">
-    <meta name="theme-color" content="#07111f">
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Phạm Thanh Bình — Web Developer & Blockchain Enthusiast tại TP.HCM" />
+  <title>Pham Thanh Binh | Developer</title>
 
-    <meta property="og:title" content="Pham Thanh Binh | Developer Portfolio">
-    <meta property="og:description" content="A modern developer portfolio focused on web projects, blockchain learning, and practical product building.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/hero-workspace.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <title>Pham Thanh Binh | Developer Portfolio</title>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="preload" href="assets/images/hero-workspace.png" as="image">
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <body>
-    <!-- Site Header -->
-    <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="Go to home">
-        <span class="brand-mark">TB</span>
-        <span class="brand-text">Thanh Binh</span>
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__mark">TB</span>
+        <span class="logo__text">Thanh Bình</span>
       </a>
 
-      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" data-nav aria-label="Main navigation">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#contact" class="nav__link">Contact</a>
       </nav>
 
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light mode">
-        <i class="fa-solid fa-sun"></i>
-      </button>
-    </header>
+      <div class="header__actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section class="hero section-shell" id="home">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Ho Chi Minh City • Developer Portfolio</p>
-          <h1>Building clean web experiences while learning the blockchain stack.</h1>
-          <p class="hero-lead">
-            I am Pham Thanh Binh, a young web developer and blockchain learner focused on practical interfaces, reliable code, and projects that can be shipped.
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow"><span class="dot"></span> Sẵn sàng làm việc</p>
+          <h1 class="hero__title">
+            Xin chào, tôi là<br />
+            <span class="gradient-text">Thanh Bình</span>
+          </h1>
+          <p class="hero__sub">Web Developer & Blockchain Enthusiast</p>
+          <p class="hero__desc">
+            Sinh viên HUTECH TP.HCM, đam mê xây dựng ứng dụng web hiện đại
+            và khám phá công nghệ blockchain. Luôn tìm kiếm cơ hội để học hỏi
+            và tạo ra những sản phẩm có giá trị thực.
           </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">
-              View Projects
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">Xem dự án <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn--outline">Liên hệ tôi</a>
           </div>
         </div>
 
-        <div class="hero-bento reveal" aria-label="Developer profile snapshot">
-          <article class="bento-card profile-card">
-            <div class="avatar" aria-hidden="true">TB</div>
-            <div>
-              <p class="card-label">Web Developer / Blockchain Learner</p>
-              <h2>Pham Thanh Binh</h2>
-              <p>HUTECH student building a stronger foundation in frontend, backend, and Web3 workflows.</p>
+        <div class="hero__visual reveal">
+          <div class="avatar-wrap">
+            <div class="avatar">
+              <span>TB</span>
             </div>
-          </article>
-
-          <article class="bento-card image-card">
-            <img src="assets/images/hero-workspace.png" alt="Modern developer workspace with code and technical dashboard screens">
-          </article>
-
-          <article class="bento-card signal-card">
-            <span class="live-dot"></span>
-            <p>Open to internships, freelance work, and product-minded tech collaborations.</p>
-          </article>
-
-          <article class="bento-card stack-card">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>MetaMask</span>
-          </article>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring avatar-ring--2"></div>
+          </div>
+          <div class="hero-chips">
+            <div class="chip"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="chip"><i class="fa-solid fa-cube"></i> Blockchain</div>
+            <div class="chip"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="chip"><i class="fa-brands fa-react"></i> React</div>
+          </div>
         </div>
-      </section>
+      </div>
 
-      <!-- About Section -->
-      <section class="section section-shell" id="about">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About</p>
-          <h2>A developer profile shaped by building, testing, and learning in public.</h2>
+      <div class="hero__scroll">
+        <span>Cuộn xuống</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Về tôi</p>
+          <h2>Tôi là ai?</h2>
         </div>
 
         <div class="about-grid">
-          <article class="bento-card about-story reveal">
-            <h3>Short Story</h3>
-            <p>
-              I study Information Technology at HUTECH and spend my time turning small ideas into working web projects. My current path combines classic web development with blockchain fundamentals, so I can understand both user-facing products and the systems behind them.
-            </p>
-            <p>
-              I care about clean structure, readable interfaces, and deployment-ready work. The goal is simple: build projects that are easy to review, easy to maintain, and useful enough to improve.
-            </p>
-          </article>
-
-          <article class="bento-card focus-card reveal">
-            <span class="metric">01</span>
-            <h3>Product Thinking</h3>
-            <p>I design pages around the first question a recruiter or client asks: what can this person build?</p>
-          </article>
-
-          <article class="bento-card focus-card reveal">
-            <span class="metric">02</span>
-            <h3>Learning Rhythm</h3>
-            <p>Frontend fundamentals first, backend flow next, then Web3 concepts through small experiments.</p>
-          </article>
-
-          <article class="bento-card focus-card wide reveal">
-            <span class="metric">03</span>
-            <h3>Working Style</h3>
-            <p>Calm execution, clear naming, responsive UI, and a habit of checking details before calling a project done.</p>
-          </article>
+          <div class="about-card reveal">
+            <div class="about-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>Background</h3>
+            <p>Sinh viên năm cuối ngành Công nghệ Thông tin tại Trường Đại học Công nghệ TP.HCM (HUTECH). Tôi có nền tảng vững về lập trình web và đang mở rộng sang blockchain development.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon"><i class="fa-solid fa-fire"></i></div>
+            <h3>Đam mê</h3>
+            <p>Tôi yêu thích việc xây dựng các sản phẩm web từ ý tưởng đến triển khai thực tế. Blockchain và DeFi là những lĩnh vực tôi đặc biệt quan tâm trong tương lai.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Mục tiêu</h3>
+            <p>Trở thành Full-stack Developer chuyên về Web3, đóng góp vào các dự án blockchain có ý nghĩa và xây dựng sản phẩm công nghệ phục vụ cộng đồng.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+            <h3>Hiện tại</h3>
+            <p>Đang tìm kiếm cơ hội thực tập hoặc làm việc tại TP.HCM. Có thể làm việc toàn thời gian hoặc bán thời gian, sẵn sàng học hỏi và phát triển.</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Skills Section -->
-      <section class="section section-shell" id="skills">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Skills</p>
-          <h2>Core tools I use and the stack I am actively growing into.</h2>
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kỹ năng</p>
+          <h2>Công nghệ tôi dùng</h2>
         </div>
 
         <div class="skills-grid">
-          <article class="skill-card reveal">
-            <div class="skill-top">
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
               <i class="fa-solid fa-code"></i>
               <h3>Frontend</h3>
             </div>
-            <p>Building responsive, structured interfaces with strong visual hierarchy.</p>
-            <div class="tag-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </article>
-
-          <article class="skill-card reveal">
-            <div class="skill-top">
-              <i class="fa-solid fa-database"></i>
-              <h3>Backend</h3>
-            </div>
-            <p>Understanding basic server-side flow, database structure, and CRUD logic.</p>
-            <div class="tag-list">
-              <span>PHP</span>
-              <span>MySQL</span>
-              <span>REST Basics</span>
-            </div>
-          </article>
-
-          <article class="skill-card reveal">
-            <div class="skill-top">
-              <i class="fa-solid fa-toolbox"></i>
-              <h3>Tools / Tech</h3>
-            </div>
-            <p>Using practical tools for version control, deployment, and Web3 experiments.</p>
-            <div class="tag-list">
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>cPanel</span>
-              <span>MetaMask</span>
-            </div>
-          </article>
-
-          <article class="skill-card highlight reveal">
-            <div class="skill-top">
-              <i class="fa-solid fa-layer-group"></i>
-              <h3>Learning Next</h3>
-            </div>
-            <p>Deepening my ability to ship richer interfaces and understand smart contract workflows.</p>
-            <div class="tag-list">
-              <span>React</span>
-              <span>Blockchain</span>
-              <span>Smart Contracts</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="section section-shell projects-section" id="projects">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Featured Projects</p>
-          <h2>Selected work designed to show practical building ability.</h2>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card featured reveal">
-            <div class="project-index">01</div>
-            <div>
-              <p class="project-type">Portfolio System</p>
-              <h3>Premium Developer Portfolio</h3>
-              <p>A dark-first personal website with bento layout, responsive sections, active navigation, and polished micro-interactions.</p>
-            </div>
-            <div class="tag-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="#" aria-label="View portfolio demo">Demo</a>
-              <a href="https://github.com/darkline7/myprofile" target="_blank" rel="noreferrer" aria-label="View portfolio GitHub repository">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-index">02</div>
-            <p class="project-type">Management App</p>
-            <h3>Student Management Dashboard</h3>
-            <p>A CRUD-focused project for managing student records, search states, and database-backed information.</p>
-            <div class="tag-list">
-              <span>PHP</span>
-              <span>MySQL</span>
-              <span>Admin UI</span>
-            </div>
-            <div class="project-links">
-              <a href="#">Demo</a>
-              <a href="#">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-index">03</div>
-            <p class="project-type">Web3 Experiment</p>
-            <h3>MetaMask Wallet Connect</h3>
-            <p>A small Web3 interface that connects to MetaMask, reads wallet state, and handles simple UI feedback.</p>
-            <div class="tag-list">
-              <span>JavaScript</span>
-              <span>MetaMask</span>
-              <span>Web3</span>
-            </div>
-            <div class="project-links">
-              <a href="#">Demo</a>
-              <a href="#">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-index">04</div>
-            <p class="project-type">Landing Page</p>
-            <h3>Service Landing Page</h3>
-            <p>A conversion-minded landing page structure with clear copy, mobile-first sections, and fast static hosting.</p>
-            <div class="tag-list">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>SEO</span>
-            </div>
-            <div class="project-links">
-              <a href="#">Demo</a>
-              <a href="#">GitHub</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Education / Experience Section -->
-      <section class="section section-shell" id="education">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Education / Experience</p>
-          <h2>A focused learning journey from fundamentals to deployable projects.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <span>2023 - Present</span>
-            <h3>HUTECH University</h3>
-            <p>Information Technology student building a foundation in programming, web systems, database design, and software thinking.</p>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span>2024 - Present</span>
-            <h3>Self-Learning Web Development</h3>
-            <p>Creating small projects to practice layout, JavaScript behavior, database-backed flows, GitHub workflow, and cPanel deployment.</p>
-          </article>
-
-          <article class="timeline-item reveal">
-            <span>Next Step</span>
-            <h3>Internship / Freelance Projects</h3>
-            <p>Looking for real product environments where I can contribute, learn from feedback, and keep improving execution quality.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="section section-shell contact-section" id="contact">
-        <div class="contact-panel reveal">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Have an internship, freelance task, or collaboration idea?</h2>
-            <p>
-              Send a short message with the role, project, or idea. I will reply with context, availability, and the next practical step.
-            </p>
-            <div class="social-row" aria-label="Social links">
-              <a href="https://github.com/darkline7" target="_blank" rel="noreferrer" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="Facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>React</span><span>Responsive Design</span>
             </div>
           </div>
 
-          <form class="contact-form" data-contact-form>
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="your@email.com" required>
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
-            </label>
-            <button class="btn btn-primary" type="submit">
-              Send Message
-              <i class="fa-solid fa-paper-plane"></i>
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <i class="fa-solid fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span>PHP</span><span>MySQL</span><span>REST API</span>
+              <span>Node.js</span><span>Laravel</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <i class="fa-solid fa-cube"></i>
+              <h3>Blockchain</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Solidity</span><span>Web3.js</span><span>MetaMask</span>
+              <span>Smart Contract</span><span>DApp</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group__head">
+              <i class="fa-solid fa-tools"></i>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Git / GitHub</span><span>VS Code</span><span>Figma</span>
+              <span>cPanel</span><span>Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Dự án</p>
+          <h2>Những gì tôi đã xây dựng</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card project-card--featured reveal">
+            <div class="project-card__badge">Nổi bật</div>
+            <div class="project-card__meta">01</div>
+            <h3>Web Profile Portfolio</h3>
+            <p>Website portfolio cá nhân hiện đại, responsive, hỗ trợ dark/light mode. Xây dựng bằng HTML, CSS, JavaScript thuần không dùng framework.</p>
+            <div class="project-card__tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://thanhbinhdev.com" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              <a href="https://github.com/darkline7/myprofile" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card__meta">02</div>
+            <h3>Banking Web App</h3>
+            <p>Ứng dụng ngân hàng cơ bản với chức năng quản lý tài khoản, giao dịch, tính lãi suất. Backend PHP + MySQL.</p>
+            <div class="project-card__tech">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card__meta">03</div>
+            <h3>DApp Blockchain Demo</h3>
+            <p>Ứng dụng phi tập trung kết nối MetaMask, tương tác với smart contract trên Ethereum testnet.</p>
+            <div class="project-card__tech">
+              <span>Solidity</span><span>Web3.js</span><span>MetaMask</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card__meta">04</div>
+            <h3>E-commerce PHP</h3>
+            <p>Website bán hàng đơn giản với giỏ hàng, thanh toán, quản lý sản phẩm và admin panel.</p>
+            <div class="project-card__tech">
+              <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Học vấn</p>
+          <h2>Quá trình học tập</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__date">2021 — Nay</div>
+            <div class="timeline-item__body">
+              <h3>Đại học Công nghệ TP.HCM (HUTECH)</h3>
+              <p class="timeline-item__sub">Công nghệ Thông tin</p>
+              <p>Học các môn chuyên ngành về lập trình, cơ sở dữ liệu, mạng máy tính. Tham gia nhiều dự án nhóm và nghiên cứu về blockchain.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__date">2023 — 2024</div>
+            <div class="timeline-item__body">
+              <h3>Tự học Web Development</h3>
+              <p class="timeline-item__sub">Online Courses & Projects</p>
+              <p>Hoàn thành các khóa học về JavaScript nâng cao, React, PHP/MySQL và bắt đầu tìm hiểu về Solidity, Web3.js.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot"></div>
+            <div class="timeline-item__date">2024 — Nay</div>
+            <div class="timeline-item__body">
+              <h3>Blockchain & DApp Development</h3>
+              <p class="timeline-item__sub">Self-study & Experiments</p>
+              <p>Nghiên cứu về smart contract, DeFi protocols, và xây dựng các demo DApp kết nối MetaMask trên Ethereum testnet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section section--last" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Liên hệ</p>
+          <h2>Hãy kết nối với tôi</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Tôi luôn sẵn sàng tiếp nhận cơ hội mới, hợp tác dự án hoặc chỉ đơn giản là trao đổi về công nghệ. Đừng ngại liên hệ!</p>
+
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:binh25820500016@hutech.edu.vn">binh25820500016@hutech.edu.vn</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-map-marker-alt"></i>
+                <span>TP. Hồ Chí Minh, Việt Nam</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/darkline7" target="_blank" rel="noopener">github.com/darkline7</a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <a href="https://github.com/darkline7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-group">
+              <label for="name">Họ tên</label>
+              <input type="text" id="name" placeholder="Nguyễn Văn A" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="example@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Nội dung</label>
+              <textarea id="message" rows="5" placeholder="Tin nhắn của bạn..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Gửi tin nhắn <i class="fa-solid fa-paper-plane"></i>
             </button>
-            <p class="form-note" data-form-note>This form opens your email app using mailto.</p>
+            <p class="form-note" id="formNote"></p>
           </form>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="site-footer section-shell">
-      <p>© <span data-year></span> Pham Thanh Binh. Built with HTML, CSS, and JavaScript.</p>
-      <a href="#home">Back to top</a>
-    </footer>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 <strong>Phạm Thanh Bình</strong>. Designed & Built with ❤️</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
