@@ -81,6 +81,9 @@ if ("IntersectionObserver" in window) {
   );
 
   revealEls.forEach((el) => revealObserver.observe(el));
+  window.setTimeout(() => {
+    revealEls.forEach((el) => el.classList.add("is-visible"));
+  }, 900);
 } else {
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }

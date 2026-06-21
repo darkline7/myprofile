@@ -716,16 +716,16 @@ h3 {
   font-weight: 800;
 }
 
-/* Reveal animation is fail-safe: content remains visible when JavaScript is unavailable. */
+/* Reveal animation is fail-safe: content is never hidden before JavaScript runs. */
 .reveal {
   opacity: 1;
   transform: translateY(0);
 }
 
 .js-enabled .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 560ms ease, transform 560ms ease;
+  opacity: 1;
+  transform: translateY(8px);
+  transition: transform 560ms ease, filter 560ms ease;
 }
 
 .js-enabled .reveal.is-visible {
